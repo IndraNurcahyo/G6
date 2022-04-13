@@ -34,11 +34,12 @@
                             echo "<script>alert('Data berhasil ditambahkan!');window.location='index.php';</script>";
                         }
                         }else{
-                            echo "<script>alert('Ekstensi gambar hanya bisa jpg dan png!');window.location='register1.php';</script>";
-                        }
-                        }else{
                             echo "<script>alert('Maaf username sudah terpakai');window.location='register1.php';</script>";
                         }
+                        }else{
+                            echo "<script>alert('Ekstensi gambar hanya bisa jpg dan png!');window.location='register1.php';</script>";
+                        }
+                        
                     
                 }else{
                     $query = "INSERT INTO pelanggan(nama, alamat, no_telp, username, password)     VALUES ('$nama', '$alamat', '$no_telp', '$username', '$password')";
